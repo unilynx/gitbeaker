@@ -1,10 +1,10 @@
 /* istanbul ignore file */
 
-import * as CORE from '@gitbeaker/core';
+import * as CORE from '../../core/src';
 import { presetResourceArguments } from '@gitbeaker/requester-utils';
 import { requesterFn } from './Requester';
 
-export type * from '@gitbeaker/core';
+export type * from '../../core/src';
 
 const { AccessLevel: AL, ...Resources } = CORE;
 const API = presetResourceArguments(Resources, { requesterFn });
